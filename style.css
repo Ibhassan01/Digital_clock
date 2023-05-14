@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Digital-italic";
+    src: url(font/TypoDigitDemoItalic-JRogn.ttf);
+}
+@font-face {
+    font-family:"Digital" ;
+    src: url(font/TypoDigitDemo-VG9lV.ttf);
+}
+
+body{
+    background-image:url("/Images/clock-bg.jpg");
+    background-size: cover;
+    font-family: "Digital-italic";
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color:  rgb(255, 247, 0);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(8, 8, 9);
+}
+.container{
+    display: flex;
+    gap: 5px;
+    backdrop-filter: blur(10px);
+    height: 50%;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: inset 4px 4px 15px white, inset -4px -4px 15px white;
+    justify-content: center;
+    align-items: center;
+}
+.container #ampm{
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+.container #hour, #divisor, #minute, #second{
+    font-size: 150px;
+}
+.container div{
+    margin: 10px;
+    text-shadow: 4px 4px 15px red;
+    position: relative;
+}
+h3{
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .container{
+        color: rgb(255, 247, 0);
+        width: 600px;
+        height: 350px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .container{
+        color: rgb(255, 247, 0);
+        width: 500px;
+        height: 300px;
+    }
+    .container #hour, #divisor, #minute, #second{
+        font-size: 80px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .container{
+        color: rgb(255, 247, 0);
+        width: 400px;
+        height: 200px;
+    }
+    .container #hour, #divisor, #minute, #second{
+        font-size: 60px;
+    }
+}
+@media only screen and (max-width:440px) {
+    .container{
+        color: rgb(255, 247, 0);
+        width: 300px;
+        height: 200px;
+    }
+    .container #hour, #divisor, #minute, #second{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width:280px) {
+    .container{
+        color: rgb(255, 247, 0);
+        width: 250px;
+        height: 150px;
+    }
+    .container #hour, #divisor, #minute, #second{
+        font-size: 35px;
+    }
+}
